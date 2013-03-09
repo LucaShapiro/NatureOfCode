@@ -3,7 +3,7 @@ ArrayList<Ant> ants;
 void setup() {
   size(800, 800);
   ants = new ArrayList<Ant>();
-  for (int i = 0; i <10; i++) {
+  for (int i = 0; i <40; i++) {
     ants.add(new Ant(random(width), random(height)));
   }
 }

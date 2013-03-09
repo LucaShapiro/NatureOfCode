@@ -126,6 +126,9 @@ class Ant {
     ellipse(location.x-(ellipse1.x/2 + ellipse2.x/2)+overlap, location.y, ellipse2.x, ellipse2.y); //ellipse2
     ellipse(location.x-(ellipse1.x/2 + ellipse2.x + ellipse3.x/2)+2*overlap, location.y, ellipse3.x, ellipse3.y); //ellipse3
     ellipse(location.x-(ellipse1.x/2 + ellipse2.x + ellipse3.x + ellipse3.x/2)+3*overlap, location.y, ellipse4.x, ellipse4.y); //ellipse4 (head)
+    noFill();
+    stroke(100);
+    ellipse(location.x-15, location.y, ellipse1.x+ellipse2.x+ellipse3.x+ellipse4.x+20, 18+20); //separation ellipse
     popMatrix();
   }
 
